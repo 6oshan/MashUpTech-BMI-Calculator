@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+    <div class="container">
+        <div id="CalArea">
+            <div id="heading">
+                <h4>BMI Calculator</h4>
+            </div>
+            <div id="AgeDiv">
+                <label for="">Age</label>
+                <input id="InputBox" type="number">
+            </div>
+            <br>
+            <div id="MaleFemale">
+                <div style="display: flex;">
+                    <input type="radio" id="male" name="gender" value="male">
+                    <label for="male">Male</label>
+                </div>
+                <div style="display: flex;">
+                    <input type="radio" id="female" name="gender" value="female">
+                    <label for="female">Female</label>
+                </div>
+            </div>
+            <br>
+            <br>
+            <div class="HW">
+                <div id="Height">
+                    <label for="">Height(cm)</label>
+                    <input id="InputBoxHeight" class="InputBoxHW" type="number">
+                </div>
+                <div id="Weight">
+                    <label for="">Weight(kg)</label>
+                    <input id="InputBoxWeight" class="InputBoxHW" type="number">
+                </div>
+            </div>
+            <br>
+            <br>
+            <div id="bimButton">
+                <button type="submit" onclick="submit()">Calculate BMI</button>
+            </div>
+            <div id="result">
+                <h3 >Your BMI is </h3>
+                <h2 id="BMI"></h2>
+            </div><br>
+            <br>
+            <div id="resultContant">
+                <h3>
+                    Your are -
+                </h3>
+                <h3 id="displayResult"> 
+                </h3>
+            </div>
+        </div>
+    </div>
+    <script src="Bmi.js">
+
+    </script>
+</body>
+
+</html>
